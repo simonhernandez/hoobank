@@ -39,11 +39,15 @@ const Hero = () => {
           annual fees.</p>
       </div>
 
-      <div className="relative max-w-[669px] flex-[50%]">
+      <div className={`relative max-w-[669px] flex-[50%] flex ${styles.flexCenter} md:my-0 my-10`}>
         <img src={robot} alt="billing"  className="w-[100%] h-[100%] relative z-[5] ml-auto"/>
         <div className="absolute z-0 w-2/5 h-[35%] top-0 pink__gradient"></div>
         <div className="absolute z-[1] w-4/5 h-4/5 rounded-full bottom-40"></div>
         <div className="absolute z-0 w-1/2 h-1/2 right-20 bottom-20 blue__gradient"></div>
+      </div>
+
+      <div className={`ss:hidden ${styles.flexCenter}`}>
+        <GetStarted/>
       </div>
     </section>
   );
